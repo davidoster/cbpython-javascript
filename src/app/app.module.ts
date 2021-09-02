@@ -8,6 +8,10 @@ import { ChildComponent } from './child/child.component';
 import { SiblingComponent } from './sibling/sibling.component';
 import { CarsComponent } from './cars/cars.component';
 import { PeopleComponent } from './people/people.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import { PeopleComponent } from './people/people.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatSliderModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

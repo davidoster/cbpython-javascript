@@ -1,0 +1,12 @@
+.container{
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+a,a:active,a:hover{
+    text-decoration :none;
+    color:black;
+
+}

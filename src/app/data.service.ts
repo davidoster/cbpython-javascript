@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Car } from './entities/Car';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ set data(dt){
 }
   constructor() { }
 
-getCars(){
+getCars():Car[]{
   return [{brand:"Honda",id:1},{brand:"mazda",id:2},{brand:"nissan",id:3}]
 }
 

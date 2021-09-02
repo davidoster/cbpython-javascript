@@ -7,16 +7,19 @@ import { DataService } from '../data.service';
   styleUrls: ['./cars.component.css']
 })
 export class CarsComponent implements OnInit {
-
+  displayedColumns: string[] = ['id', 'brand'];
+  dataSource:any[] =[];
   constructor(public dataService:DataService) {
     console.log('CarsComponent constructor')
+ 
   }
 
   ngOnInit(): void {
     console.log('CarsComponent on init')
-    console.log(this.dataService.getCars())
+    this.dataSource =this.dataService.getCars();
   }
   ngAfterViewInit() {
+  
     console.log('CarsComponent after view init')
   }
   ngOnDestroy() {

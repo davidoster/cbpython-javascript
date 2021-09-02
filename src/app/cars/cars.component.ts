@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-cars',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dataService:DataService) {
+    console.log('CarsComponent constructor')
+  }
 
   ngOnInit(): void {
+    console.log('CarsComponent on init')
+  }
+  ngAfterViewInit() {
+    console.log('CarsComponent after view init')
+  }
+  ngOnDestroy() {
+    console.log('CarsComponent on destroy')
   }
 
 }

@@ -14,6 +14,7 @@ export class CarsComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('CarsComponent on init')
+    console.log(this.dataService.getCars())
   }
   ngAfterViewInit() {
     console.log('CarsComponent after view init')

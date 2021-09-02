@@ -10,13 +10,15 @@ a,a:active,a:hover{
     color:black;
 
 }
-
+/* sxolio */
 @keyframes moveUp{
     0%{transform: translateY(-1px);}
+  
     100%{transform: translateY(-5px);}
 }
 @keyframes moveDown{
     0%{transform: translateY(0px);}
+  
     100%{transform: translateY(1px);}
 }
 button:hover{

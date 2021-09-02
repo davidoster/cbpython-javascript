@@ -10,8 +10,7 @@ export class FatherComponent implements OnInit {
   childInfo: string = '';
   constructor() { }
   getInfo($event: any) {
-    this.childInfo = $event
-    console.log($event)
+    this.childInfo = $event;
   }
   ngOnInit(): void {
   }

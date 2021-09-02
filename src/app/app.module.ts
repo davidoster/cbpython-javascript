@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FatherComponent } from './father/father.component';
 import { ChildComponent } from './child/child.component';
 import { SiblingComponent } from './sibling/sibling.component';
+import { CarsComponent } from './cars/cars.component';
+import { PeopleComponent } from './people/people.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { SiblingComponent } from './sibling/sibling.component';
     AppComponent,
     FatherComponent,
     ChildComponent,
-    SiblingComponent
+    SiblingComponent,
+    CarsComponent,
+    PeopleComponent
   ],
   imports: [
     BrowserModule,
